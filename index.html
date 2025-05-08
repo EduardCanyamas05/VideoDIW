@@ -8,26 +8,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <h1 class="text-center" style="color: white;">VIDEO DEL TRENNN</h1>
+    </nav>
+    <br>
     <div class="container text-center">
-        <audio controls>
-            <source src="media/sans.mp3" type="audio/mp3">
-            Ho sento, el teu navegador no suporta àudio d'HTML5.
-        </audio>
-        <div style="padding: 1em; margin-bottom: 1em; border: 1px; background-color: #eee;">
-            "<a rel="nofollow" class="external text" href="https://timtaj.com/royalty-free-music/background-technology">Background Technology</a>" 
-            by <a rel="nofollow" class="external text" href="https://freemusicarchive.org/music/timtaj/contact">Taj Tim</a> 
-            is licensed under <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
-        </div>
-        <hr>
         <!-- L'etiqueta <video> també accepta varies propietats: height, width, autoplay... 
              poster permet establir un fons per quan no el vídeo no s'està reproduint.
         -->
-        <video id="videoMio" class="w-75" poster="thumbnail/thumbnail.svg" controls>
+        <video id="videoMio" class="w-75" poster="thumbnail/thumbnail.png" controls>
             <!-- podem tenir diversos formats. El repoductor escollirà el primer que reconegui. -->
             <source src="media/metro-musica.mp4" type="video/mp4">
             <source src="media/metro.ogg" type="video/ogg">
             <!-- afegim els subtítols en format WebVTT (Web Video Text Tracks), un per cada idioma
-                 El reproductor ens deixa escollir idioma en el seu menú per defecte.
+            El reproductor ens deixa escollir idioma en el seu menú per defecte.
             -->
             <!-- captions: normalment per persones amb discapacitat auditiva, amb descripcions diverses
                  subtitles: per traducció dels diàlegs.
@@ -36,6 +30,15 @@
             <track src="media/captions/metro-es.vtt" label="Espanyol" kind="captions" srclang="es">
             El teu navegador no suporta l'element HTML vídeo.
         </video>
+        <div style="padding: 1em; margin-bottom: 1em; border: 1px; background-color: #eee;">
+            "<a rel="nofollow" class="external text" href="https://timtaj.com/royalty-free-music/background-technology">Background Technology</a>" 
+            by <a rel="nofollow" class="external text" href="https://freemusicarchive.org/music/timtaj/contact">Taj Tim</a> 
+            is licensed under <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
+        </div>
+        <audio controls>
+            <source src="media/sans.mp3" type="audio/mp3">
+            Ho sento, el teu navegador no suporta àudio d'HTML5.
+        </audio>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
